@@ -3,38 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inhyeok Oh</title>
+    <title>Inhyeok Oh - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-[#b6cbe5] flex justify-center items-center min-h-screen py-10 m-0">
-    <div class="bg-gray-200 p-8 rounded-lg shadow-lg flex flex-col items-center max-w-sm w-full mx-4">
-        <img src="sources/profile_pic/prof.jpg" alt="프로필 사진" class="w-36 h-36 rounded-full object-cover mb-5">
-        <h1 class="text-2xl font-bold mb-2">Inhyeok Oh</h1>
-        <p class="text-lg text-gray-700 mb-4">DGIST, Undergrad (On Military Leave ⚓️)</p>
+<body class="bg-[#0b0f19] flex justify-center items-center min-h-screen py-10 m-0 font-sans selection:bg-indigo-500 selection:text-white">
+    <!-- Main Glassmorphism Card -->
+    <div class="bg-slate-900/85 backdrop-blur-xl border border-indigo-500/25 shadow-[0_0_50px_-10px_rgba(99,102,241,0.2)] rounded-3xl p-7 max-w-sm w-full mx-4 flex flex-col items-center relative overflow-hidden">
         
-        <p class="text-lg font-semibold mb-2">CV</p>
-        <ul class="text-left list-none w-full px-2 text-gray-800">
-            <li class="mb-1">• Movers Inc. AI Researcher</li>
-            <li class="mb-1">• 2024 DGIST UGRP Researcher</li>
-            <li class="mb-1">• 2024 SPARCS Science Hackathon</li>
-            <li class="mb-1">• 2023 UCLA Summer Session</li>
-            <li class="mb-1">• 前 VodkaGames headquarter</li>
-        </ul>
+        <!-- Subtle Top Neon Accent Glow -->
+        <div class="absolute -top-12 left-1/2 -translate-x-1/2 w-40 h-24 bg-indigo-500/20 blur-2xl rounded-full pointer-events-none"></div>
 
-        <p class="text-lg font-semibold mb-2 mt-4">Interests</p>
-        <ul class="text-left list-none w-full px-2 text-gray-800">
-            <li class="mb-1">• Proprietary Trading</li>
-            <li class="mb-1">• Quantitative Trading & Crypto Markets</li>
-            <li class="mb-1">• Texas Hold'em & Game Theory</li>
-        </ul>
-
-        <div class="mt-6 text-center">
-            <a href="https://github.com/InhyeokOh03" class="block text-blue-500 hover:underline mb-1">GitHub</a>
-            <a href="https://steamcommunity.com/id/jjangdol6936/" class="block text-blue-500 hover:underline mb-1">Steam</a>
-            <a href="https://www.linkedin.com/in/inhyeok-oh-694a26252/" class="block text-blue-500 hover:underline mb-1">LinkedIn</a>
-            <a href="https://www.instagram.com/jjangdol__/" class="block text-blue-500 hover:underline mb-1">Instagram</a>
+        <!-- Avatar with Neon Rim -->
+        <div class="relative mb-4 mt-1">
+            <img src="sources/profile_pic/prof.png" alt="Inhyeok Oh" class="w-28 h-28 rounded-full object-cover ring-2 ring-indigo-400/80 ring-offset-4 ring-offset-slate-900 shadow-[0_0_20px_rgba(99,102,241,0.4)]">
         </div>
-        <p class="mt-4 text-gray-700">DISCORD: raphtalia__</p>
+
+        <!-- Name & Affiliation -->
+        <h1 class="text-2xl font-bold text-white tracking-tight mb-1">Inhyeok Oh</h1>
+        <p class="text-xs font-medium text-cyan-400 mb-5 tracking-wide flex items-center gap-1">
+            DGIST, Undergrad <span class="text-slate-400 font-normal">(On Military Leave ⚓️)</span>
+        </p>
+
+        <!-- CV Section -->
+        <div class="w-full mb-4">
+            <div class="flex items-center gap-1.5 mb-2 px-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-indigo-300">CV</span>
+            </div>
+            <div class="space-y-1.5 text-xs">
+                <div class="bg-slate-800/60 border border-slate-700/50 rounded-xl px-3 py-2 flex items-center justify-between">
+                    <span class="font-medium text-slate-200">• Movers Inc.</span>
+                    <span class="text-indigo-300 text-[11px] font-semibold">AI Researcher</span>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/40 rounded-xl px-3 py-1.5 flex items-center justify-between text-slate-300">
+                    <span>• 2024 DGIST UGRP Researcher</span>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/40 rounded-xl px-3 py-1.5 flex items-center justify-between text-slate-300">
+                    <span>• 2024 SPARCS Science Hackathon</span>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/40 rounded-xl px-3 py-1.5 flex items-center justify-between text-slate-300">
+                    <span>• 2023 UCLA Summer Session</span>
+                </div>
+                <div class="bg-slate-800/40 border border-slate-700/40 rounded-xl px-3 py-1.5 flex items-center justify-between text-slate-300">
+                    <span>• 前 VodkaGames headquarter</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="w-full mb-5">
+            <div class="flex items-center gap-1.5 mb-2 px-1">
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+                <span class="text-xs font-bold uppercase tracking-wider text-cyan-300">Interests</span>
+            </div>
+            <div class="flex flex-wrap gap-1.5">
+                <span class="bg-indigo-950/70 border border-indigo-500/30 text-indigo-200 text-xs px-2.5 py-1 rounded-lg">📈 Proprietary Trading</span>
+                <span class="bg-cyan-950/70 border border-cyan-500/30 text-cyan-200 text-xs px-2.5 py-1 rounded-lg">⚡️ Quant & Crypto Markets</span>
+                <span class="bg-purple-950/70 border border-purple-500/30 text-purple-200 text-xs px-2.5 py-1 rounded-lg">♠️ Texas Hold'em & Game Theory</span>
+            </div>
+        </div>
+
+        <!-- Social Links (2x2 Grid Buttons) -->
+        <div class="w-full grid grid-cols-2 gap-2 mb-4 text-xs font-medium">
+            <a href="https://github.com/InhyeokOh03" target="_blank" class="bg-slate-800/80 hover:bg-slate-700 border border-slate-700 hover:border-indigo-400/50 text-slate-200 py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-all">
+                <span>GitHub</span>
+            </a>
+            <a href="https://steamcommunity.com/id/jjangdol6936/" target="_blank" class="bg-slate-800/80 hover:bg-slate-700 border border-slate-700 hover:border-indigo-400/50 text-slate-200 py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-all">
+                <span>Steam</span>
+            </a>
+            <a href="https://www.linkedin.com/in/inhyeok-oh-694a26252/" target="_blank" class="bg-slate-800/80 hover:bg-slate-700 border border-slate-700 hover:border-indigo-400/50 text-slate-200 py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-all">
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/jjangdol__/" target="_blank" class="bg-slate-800/80 hover:bg-slate-700 border border-slate-700 hover:border-indigo-400/50 text-slate-200 py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 transition-all">
+                <span>Instagram</span>
+            </a>
+        </div>
+
+        <!-- Discord Footer -->
+        <div class="text-[11px] text-slate-500 font-mono tracking-wider pt-1">
+            DISCORD: <span class="text-slate-400">raphtalia__</span>
+        </div>
     </div>
 </body>
 </html>
